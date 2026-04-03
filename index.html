@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Redirecting to install the game...</title>
+
+  <!-- ✅ Open Graph meta tags (카카오톡/디스코드/트위터 공통) -->
+  <meta property="og:title" content="Sinclair's Notebook" />
+  <meta property="og:description" content="Install Sinclair's Notebook now and chase his fading shadow." />
+  <meta property="og:image" content="https://raw.githubusercontent.com/svsmov/sinclair/main/sinclair.png" />
+  <meta property="og:url" content="https://svsmov.github.io/smartlink/" />
+  <meta property="og:type" content="website" />
+
+  <!-- ✅ Twitter Card (optional) -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Sinclair's Notebook" />
+  <meta name="twitter:description" content="Install Sinclair's Notebook now and chase his fading shadow." />
+  <meta name="twitter:image" content="https://raw.githubusercontent.com/svsmov/sinclair/main/sinclair.png" />
+
+  <script>
+    window.onload = function () {
+      var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+      if (/android/i.test(userAgent)) {
+        window.location.href = "https://play.google.com/store/apps/details?id=com.puffything.sinclair&pcampaignid=web_share";
+      } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+        window.location.href = "https://apps.apple.com/app/id6758689011";
+      } else {
+        window.location.href = "https://play.google.com/store/apps/details?id=com.puffything.sinclair&pcampaignid=web_share";
+      }
+    };
+  </script>
+</head>
+<body>
+  <p>Redirecting to install Urban Lore...</p>
+</body>
+</html>
